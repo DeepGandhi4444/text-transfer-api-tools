@@ -1,0 +1,293 @@
+.peer-form{
+    background: rgba(255, 255, 255, 0.526);
+    color: black;
+    padding: 30px;
+
+}
+.peerbtn{
+    background-color: #ff9807;
+    border-radius: 30px;
+    margin: auto;
+   color: #000;
+   font-size: large;
+}
+.peerbtn:hover{
+    color: #ccc;
+}
+.gear{
+    width: 100%;
+}
+.peer{
+    float: right;
+}
+.quickshare{
+    margin-right: 50px;
+
+}
+.dark{
+    background: rgba(0, 0, 0, 0.599);
+  }
+  .border{
+    border:2px solid #000 ;
+  }
+  body {
+font-family: Arial, sans-serif;
+}
+#mainbody{
+padding: 5px;
+
+}
+
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  height: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: none;
+  font-size: 25px;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+#id{
+text-align: center;
+}
+#success{
+display: none;
+}
+
+
+.close{
+float: right;
+}
+
+.lamp{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);   background-color: yellow;
+    position:relative;
+    top: -279px;
+    left: 1056px;
+    height: 150px;
+    width: 300px;
+    transform: rotate(90deg);
+}
+#id{
+    background-color: #ff9807;
+    border: 2px solid whitesmoke;
+    border-radius: 3px;
+    color: black;
+    /* margin-top: 5px; */
+    margin-bottom: 15px;
+    padding: 3px;
+    display: none;
+
+}
+#id a:any-link{
+    color: #000;
+}
+.google-login a img{
+    
+    width: 60px;
+    position: relative;
+    left: -20px;
+    
+}
+.google-login {
+   
+    width: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.google-login:hover{
+    transform: scale(1.4);
+}
+.one{
+    width: 40vw;
+}
+.two{
+    width: 40vw;
+    padding-bottom: 10px;
+}
+
+.for-btn{
+    display: flex;
+}
+.three{
+    display: flex;
+    margin-top: 25px;
+width: 100%;
+flex-direction: row;
+}
+.three-one{
+    width: 30%;
+    display: inline-block;
+
+}
+.three-two{
+    display: inline-block;
+    /* float: right; */
+    width: 70%;
+}
+.textbox{
+width: 100%;
+background-color: #ff9807;
+color: #000;
+min-height: 200px ;
+max-height: max-content;
+padding: 15px;
+margin: 14px 0px 14px 0px;
+border-radius: 6px;
+text-align: justify;
+}
+
+
+#qrcode{
+    padding: 3px;
+    border-radius: 3px;
+    transform: translate(0%,0%)
+}
+
+  #qrcode {
+    background-color: inherit;
+    transition: all 0.15s ease-out;
+  }
+  #qrcode::before {
+    content: '';
+    display: block;
+    width: var(--trace-size);
+    height: var(--trace-size);
+    position: absolute;
+    background-color: #f00;
+    border-radius: 20%;
+    animation: 2s ease-in-out 1s infinite normal both qr-trace;
+    transition: inherit;
+  }
+  #qrcode img {
+    background-color: inherit;
+    mix-blend-mode: darken;
+    image-rendering: pixelated;
+    transition: inherit;
+  }
+  #qrcode .qr-action {
+    display: block;
+    width: 33%;
+    height: 33%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 1;
+    transition: inherit;
+    cursor: pointer;
+    text-decoration: none !important;
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+  }
+  #qrcode .qr-action::before,
+  #qrcode .qr-action::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-shadow: 0 10px 20px -10px #000;
+    transform-style: preserve-3d;
+    transition: all .45s ease-out;
+  }
+  #qrcode .qr-action::before {
+    backface-visibility: hidden;
+    transform: translateZ(0px) scale(1);
+    background-color: #fff;
+    color: #000;
+  }
+  #qrcode .qr-action::after {
+    transform: translateZ(-1px) scale(0.95);
+    background-color: #000;
+    color: var(--theme-color);
+  }
+  #qrcode .qr-action[data-qr-action="download"]::before,
+  #qrcode .qr-action[data-qr-action="download"]::after {
+    content: '\f381';
+  }
+  #qrcode .qr-action[data-qr-action="copy"]::before,
+  #qrcode .qr-action[data-qr-action="copy"]::after {
+    content: '\f0c5';
+  }
+  #qrcode .qr-action[data-qr-action="visit"]::before,
+  #qrcode .qr-action[data-qr-action="visit"]::after {
+    content: '\f0c1';
+  }
+  #qrcode .qr-action:nth-child(1) {
+    transform: translate(-175%, -50%) scale(0);
+  }
+  #qrcode .qr-action:nth-child(2) {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  #qrcode .qr-action:nth-child(3) {
+    transform: translate(75%, -50%) scale(0);
+  }
+  #qrcode .qr-action i,
+  #qrcode .qr-action svg {
+    pointer-events: none;
+  }
+  #qrcode:hover::before {
+    opacity: 0;
+  }
+  #qrcode:hover img {
+    opacity: 0.5;
+  }
+  #qrcode:hover .qr-action {
+    opacity: 1;
+  }
+  #qrcode:hover .qr-action:nth-child(1) {
+    transform: translate(-175%, -50%) scale(1);
+    color: #ccc;
+  }
+  #qrcode:hover .qr-action:nth-child(2) {
+    transform: translate(-50%, -50%) scale(1);
+    color: #ccc;
+  }
+  #qrcode:hover .qr-action:nth-child(3) {
+    transform: translate(75%, -50%) scale(1);
+    color: #ccc;
+  }
+  #qrcode:hover .qr-action:hover::before {
+    transform: translateZ(0px) scale(0.95) rotateY(180deg);
+  }
+  #qrcode:hover .qr-action:hover::after {
+    transform: translateZ(-1px) scale(1) rotateY(180deg);
+  }
+  @keyframes qr-trace {
+    0%, 10% {
+      left: calc(-1 * (var(--trace-size) + var(--trace-distance)));
+      top: calc(-1 * (var(--trace-size) + var(--trace-distance)));
+      filter: hue-rotate(0deg);
+    } 25%, 35% {
+      left: calc(100% + var(--trace-distance));
+      top: calc(-1 * (var(--trace-size) + var(--trace-distance)));
+    } 50%, 60% {
+      left: calc(100% + var(--trace-distance));
+      top: calc(100% + var(--trace-distance));
+    } 75%, 85% {
+      left: calc(-1 * (var(--trace-size) + var(--trace-distance)));
+      top: calc(100% + var(--trace-distance));
+    } 100% {
+      left: calc(-1 * (var(--trace-size) + var(--trace-distance)));
+      top: calc(-1 * (var(--trace-size) + var(--trace-distance)));
+      filter: hue-rotate(360deg);
+    }
+  }
