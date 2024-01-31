@@ -7,11 +7,11 @@ const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
-// const fs = require('fs')
+const fs = require('fs')
 
 const mode = require('./routes/mode.js');
 const api =  require('./routes/api.js');
-require('./function.js');
+
 
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
@@ -91,13 +91,7 @@ app.get('/auth/google/callback',
     // Successful authentication, redirect home.
     res.redirect('/');
   });
-// app.get('/auth/google/success',islogged,(res,req)=>{
-//   var name = req.user.displayNAME;
-//   res.send('logged in suucessfully'+name)
-// })
-// app.get('/auth/google/failure',(res,req)=>{
-//   res.sendStatus(401);
-// })
+
 
 app.get('/services', (req, res) =>{
   res.render('services');
@@ -126,7 +120,7 @@ function generatePass() {
   let pass = '';
   let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
       'abcdefghijklmnopqrstuvwxyz'+'0123456789';
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= 6; i++) {
       let char = Math.floor(Math.random()
           * str.length + 1);
       pass += str.charAt(char)
