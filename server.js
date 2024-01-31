@@ -7,7 +7,7 @@ const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
-const fs = require('fs')
+// const fs = require('fs')
 
 const mode = require('./routes/mode.js');
 const api =  require('./routes/api.js');
