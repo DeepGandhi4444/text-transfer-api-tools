@@ -118,9 +118,9 @@ function encrpyt(text){
 }
 function generatePass() {
   let pass = '';
-  let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
-      'abcdefghijklmnopqrstuvwxyz'+'0123456789';
-  for (let i = 1; i <= 6; i++) {
+  let str = '0123456789';
+  //add this in above str for better and stronger password :- 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + 'abcdefghijklmnopqrstuvwxyz'+
+  for (let i = 1; i <= 10; i++) {
       let char = Math.floor(Math.random()
           * str.length + 1);
       pass += str.charAt(char)
